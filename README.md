@@ -4,9 +4,16 @@ A streamlined setup guide to run Expo, Next.js, and React Native in a unified pr
 
 ### 🚀 Getting Started
 
+**Installation**
+This repository uses yarn 4 and node 22.
+
+```bash
+yarn install
+```
+
 **Start Development Servers**  
-- **Expo:** `npm run expo:start`  
-- **Next.js:** `npm run next:dev`
+- **Expo:** `yarn expo:start`  
+- **Next.js:** `yarn next:dev`
 
 
 ### 📁 Project Structure
@@ -29,16 +36,16 @@ A streamlined setup guide to run Expo, Next.js, and React Native in a unified pr
 
 | Script                    | Description                          |
 |--|--|
-| `npm run expo:start`     | Launch Expo in development           |
-| `npm run expo:android`   | Run Expo on Android device/emulator  |
-| `npm run expo:ios`       | Run Expo on iOS simulator            |
-| `npm run expo:web`       | Run Expo in a web browser            |
-| `npm run expo:reset-project` | Reset Expo cache and state       |
-| `npm run next:dev`       | Start Next.js dev server             |
-| `npm run next:build`     | Build Next.js app for production     |
-| `npm run next:start`     | Serve built Next.js app              |
-| `npm run lint`           | Run ESLint                           |
-| `npm run expo:test`      | Run tests with Jest                  |
+| `yarn expo:start`     | Launch Expo in development           |
+| `yarn expo:android`   | Run Expo on Android device/emulator  |
+| `yarn expo:ios`       | Run Expo on iOS simulator            |
+| `yarn expo:web`       | Run Expo in a web browser            |
+| `yarn expo:reset-project` | Reset Expo cache and state       |
+| `yarn next:dev`       | Start Next.js dev server             |
+| `yarn next:build`     | Build Next.js app for production     |
+| `yarn next:start`     | Serve built Next.js app              |
+| `yarn lint`           | Run ESLint                           |
+| `yarn expo:test`      | Run tests with Jest                  |
 
 
 
@@ -76,8 +83,8 @@ expo build:ios      # Build iOS app
 
 **Next.js:**  
 ```bash
-npm run next:build  
-npm run next:start
+yarn next:build  
+yarn next:start
 ```
 
 
