@@ -1,5 +1,5 @@
 {
-  "name": "nextJS-expo-rnweb-tailwind-template",
+  "name": "nextjs-expo-cross-platform-template",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
@@ -12,9 +12,8 @@
     "expo:android": "expo start --android",
     "expo:ios": "expo start --ios",
     "expo:web": "expo start --web",
-    "expo:test": "jest --watchAll",
-    "expo:lint": "expo lint",
-    "lint": "eslint ."
+    "test": "jest --watchAll",
+    "lint": "eslint . && expo lint && next lint"
   },
   "jest": {
     "preset": "jest-expo"

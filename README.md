@@ -45,7 +45,7 @@ yarn install
 | `yarn next:build`     | Build Next.js app for production     |
 | `yarn next:start`     | Serve built Next.js app              |
 | `yarn lint`           | Run ESLint                           |
-| `yarn expo:test`      | Run tests with Jest                  |
+| `yarn test`           | Run tests with Jest                  |
 
 
 
