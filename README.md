@@ -12,7 +12,7 @@ A streamlined setup guide to run Expo, Next.js, and React Native in a unified pr
 ### 📁 Project Structure
 
 | Folder        | Description                            |
-||-|
+|---------------|----------------------------------------|
 | `app/`        | Core app logic                         |
 | `(native)/`   | Expo-specific components               |
 | `(next)/`     | Next.js-specific components            |
@@ -24,8 +24,6 @@ A streamlined setup guide to run Expo, Next.js, and React Native in a unified pr
 | `store/`      | State management setup                 |
 | `style/`      | Global styles                          |
 | `vendors/`    | Third-party libraries                  |
-
-
 
 ### 🛠 Available Scripts
 
