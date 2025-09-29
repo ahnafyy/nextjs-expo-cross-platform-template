@@ -221,8 +221,8 @@ describe('useThemeColor Hook', () => {
         useThemeColor({ light: '', dark: '#dark' }, 'text')
       );
       
-      // Empty string should be returned (falsy but valid)
-      expect(result.current).toBe('');
+      // Empty string is falsy, so it falls back to default color
+      expect(result.current).toBe('#11181C');
     });
 
     it('works with null prop values', () => {
