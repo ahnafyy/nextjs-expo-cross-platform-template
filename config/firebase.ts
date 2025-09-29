@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
-import * as Google from "expo-auth-session/providers/google";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+// import { GoogleAuthProvider } from "firebase/auth"; // Import when needed
+// import * as Google from "expo-auth-session/providers/google"; // Import when needed
 import { useEffect } from "react";
 
 const firebaseConfig = {
@@ -14,19 +15,22 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const provider = new GoogleAuthProvider();
+// const provider = new GoogleAuthProvider(); // Uncomment when needed
 
 const signIn = async () => {
-  const [request, response, promptAsync] = Google.useAuthRequest({
-    androidClientId: "YOUR_ANDROID_CLIENT_ID",
-    iosClientId: "YOUR_IOS_CLIENT_ID",
-  });
+  // const [request, response, promptAsync] = Google.useAuthRequest({
+  //   androidClientId: "YOUR_ANDROID_CLIENT_ID",
+  //   iosClientId: "YOUR_IOS_CLIENT_ID",
+  // });
 
-  if (response?.type === "success") {
-   
-  } else {
-    promptAsync();
-  }
+  // if (response?.type === "success") {
+  //  
+  // } else {
+  //   promptAsync();
+  // }
+  
+  // Note: This function should be implemented properly when Google Auth is configured
+  console.log("Sign in function called - implement Google Auth configuration");
 };
 
 const logOut = async () => {
@@ -36,7 +40,7 @@ const logOut = async () => {
 
 const useAuthListener = () => {
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+    const unsubscribe = onAuthStateChanged(auth, (_currentUser) => {
       // useAuthStore.getState().setUser(currentUser);
     });
     return () => unsubscribe();
