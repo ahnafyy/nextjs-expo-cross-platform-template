@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
+import { Text } from 'react-native';
 import ExampleCrossComponent from '../ExampleCrossComponent';
 
 describe('ExampleCrossComponent', () => {
@@ -92,7 +93,7 @@ describe('ExampleCrossComponent', () => {
   it('renders custom children when no title provided', () => {
     const { getByText } = render(
       <ExampleCrossComponent>
-        <span>Custom Child</span>
+        <Text>Custom Child</Text>
       </ExampleCrossComponent>
     );
     
