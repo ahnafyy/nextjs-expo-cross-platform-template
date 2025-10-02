@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExampleCrossComponent applies correct size styles: large-size 1`] = `[Function]`;
+
+exports[`ExampleCrossComponent applies correct size styles: small-size 1`] = `[Function]`;
+
+exports[`ExampleCrossComponent applies correct variant styles: primary-variant 1`] = `[Function]`;
+
+exports[`ExampleCrossComponent applies correct variant styles: secondary-variant 1`] = `[Function]`;

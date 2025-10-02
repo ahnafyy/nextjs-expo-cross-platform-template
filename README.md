@@ -31,6 +31,9 @@ yarn install
 | `store/`      | State management setup                 |
 | `style/`      | Global styles                          |
 | `vendors/`    | Third-party libraries                  |
+| `__tests__/`  | Test files and test utilities          |
+| `e2e/`        | End-to-end tests (Playwright)          |
+| `docs/`       | Documentation files                    |
 
 ### 🛠 Available Scripts
 
@@ -44,8 +47,11 @@ yarn install
 | `yarn next:dev`       | Start Next.js dev server             |
 | `yarn next:build`     | Build Next.js app for production     |
 | `yarn next:start`     | Serve built Next.js app              |
-| `yarn lint`           | Run ESLint                           |
 | `yarn test`           | Run tests with Jest                  |
+| `yarn test:watch`     | Run tests in watch mode              |
+| `yarn test:coverage`  | Run tests with coverage report       |
+| `yarn test:e2e`       | Run E2E tests with Playwright        |
+| `yarn lint`           | Run ESLint                           |
 
 
 
@@ -86,6 +92,32 @@ expo build:ios      # Build iOS app
 yarn next:build  
 yarn next:start
 ```
+
+
+### 🧪 Testing
+
+This project includes comprehensive testing with Jest, React Testing Library, and Playwright.
+
+```bash
+# Run all tests
+yarn test
+
+# Run tests in watch mode (for development)
+yarn test:watch
+
+# Run tests with coverage report
+yarn test:coverage
+
+# Run end-to-end tests (web)
+yarn test:e2e
+```
+
+**Test Structure:**
+- **Unit Tests**: Individual component and hook testing
+- **Integration Tests**: Component interaction testing  
+- **E2E Tests**: Full user journey testing (web)
+
+For detailed testing guidelines, see [`docs/TESTING.md`](docs/TESTING.md).
 
 
 ### 📚 Additional Resources
