@@ -11,7 +11,7 @@ export type AccordionProps = {
 const Accordion: React.FC<AccordionProps> & {
   Title: typeof CollapseTitle;
   Content: typeof CollapseContent;
-} = ({ name = 'accordion', icon, children }) => {
+} = ({ name: _name = 'accordion', icon, children }) => {
   const [expanded, setExpanded] = useState(false);
   return (
     <View style={tw`border border-gray-300 rounded-lg overflow-hidden`}>  
