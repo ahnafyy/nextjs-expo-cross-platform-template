@@ -10251,9 +10251,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nextJS-expo-rnweb-tailwind-template@workspace:.":
+"nextjs-expo-cross-platform-template@workspace:.":
   version: 0.0.0-use.local
-  resolution: "nextJS-expo-rnweb-tailwind-template@workspace:."
+  resolution: "nextjs-expo-cross-platform-template@workspace:."
   dependencies:
     "@babel/core": "npm:^7.26.9"
     "@expo/next-adapter": "npm:^6.0.0"
