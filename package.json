@@ -36,6 +36,7 @@
       "vendors/daisyui/Button/**/*.{ts,tsx}",
       "vendors/daisyui/Menu/**/*.{ts,tsx}",
       "vendors/daisyui/Drawer/**/*.{ts,tsx}",
+      "components/Common/**/*.{ts,tsx}",
       "app/**/*.{ts,tsx}",
       "!**/*.d.ts",
       "!**/node_modules/**",
